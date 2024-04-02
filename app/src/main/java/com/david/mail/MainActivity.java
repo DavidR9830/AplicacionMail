@@ -30,14 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         gmailListView = findViewById(R.id.gmailListView);
 
-        mailList.add(new MailList("Peo Estrella","Ya quedo lista la ley de la mano izquierda","P",R.menu.circle));
-        mailList.add(new MailList("Nisa","It is the like).","N",R.menu.circle2));
-        mailList.add(new MailList("Mehmet"," and the like).","M",R.menu.circle3));
-        mailList.add(new MailList("Hülya","It is a nd the lik.","H",R.menu.circle4));
-        mailList.add(new MailList("Ayşe","It is  and the like).","A",R.menu.circle5));
-        mailList.add(new MailList("Semih","humour and the like).","S",R.menu.circle));
-        mailList.add(new MailList("Ece","It is humour and the like).","E",R.menu.circle2));
-        mailList.add(new MailList("Karsu","It is ed ur and the like).","K",R.menu.circle3));
+        mailList.add(new MailList("Valentina","Ya esta finalizado el informe solicitado","V",R.menu.circle));
+        mailList.add(new MailList("Yenifer","Escribo para solicitar certificado de estudio","Y",R.menu.circle2));
+        mailList.add(new MailList("Nubank"," Su tarjeta de credito ha sido aprobada y le será entregada " +
+                "en una de nuestas sedes","N",R.menu.circle3));
+        mailList.add(new MailList("Google","Se ha detectado un nuevo inicio de sesión cerca a Medellín","G",R.menu.circle4));
+        mailList.add(new MailList("Didi","Recuerda calificar tu experiencia viajando con nostros," +
+                " hazlo desde la app, al finalziar el viaje","D",R.menu.circle5));
+        mailList.add(new MailList("Mercado libre","Su pedido se ha envíado a la dirrección correspondiente" +
+                "recuerda que puedes rastreatlo desde nuestra app","M",R.menu.circle));
+        mailList.add(new MailList("Sura eps","Recuerda tu cita con médico general el 12/05/2024 a las 15:00","S",R.menu.circle2));
+        mailList.add(new MailList("Wom","Recuerda que con nuestro plan pospago tienes más megas para disfrutar,}" +
+                "ingresa y unete","W",R.menu.circle3));
 
 
         MailAdapter mailAdapter = new MailAdapter(this, mailList);

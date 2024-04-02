@@ -17,7 +17,7 @@ public class MailDetails extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.maildetails);
 
-        // Obtener los datos del intento
+
         Intent intent1 = getIntent();
         String mailName = intent1.getStringExtra("mailName");
         String mailContent = intent1.getStringExtra("mailContent");

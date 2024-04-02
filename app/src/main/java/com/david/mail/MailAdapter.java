@@ -47,6 +47,8 @@ public class MailAdapter extends BaseAdapter {
         TextView mailContent = convertView.findViewById(R.id.mailContent);
         TextView mailNames = convertView.findViewById(R.id.mailNames);
         ImageView imageView = convertView.findViewById(R.id.imageView);
+
+
         MailList mail = mailArrayList.get(position);
         mailName.setText(mail.getName());
         mailContent.setText(mail.getMail());

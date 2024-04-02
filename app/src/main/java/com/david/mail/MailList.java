@@ -3,13 +3,16 @@ package com.david.mail;
 
 public class MailList {
     private String name;
+    private String from;
+    private String subject;
     private String mail;
     private String mailNames;
+
     private int image;
 
     private  boolean read;
 
-    public MailList(String name, String mail, String mailNames, int image) {
+    public MailList(String name,  String mail, String mailNames, int image) {
         this.name = name;
         this.mail = mail;
         this.mailNames = mailNames;
@@ -25,6 +28,7 @@ public class MailList {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getMail() {
         return mail;
