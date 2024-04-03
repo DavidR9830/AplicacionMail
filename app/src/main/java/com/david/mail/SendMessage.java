@@ -31,8 +31,7 @@ public class SendMessage extends Activity {
 
 
         primaryTextView.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplication(),MainActivity.class);
-            startActivity(intent);
+            finish();
         });
 
         send = findViewById(R.id.send);

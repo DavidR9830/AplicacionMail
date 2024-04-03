@@ -43,14 +43,15 @@ public class MailAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         convertView = mInflater.inflate(R.layout.mail_list, null);
-        TextView mailName =  convertView.findViewById(R.id.mailName);
+        TextView mailName = convertView.findViewById(R.id.mailName);
+        TextView mailSubject = convertView.findViewById(R.id.mailSubject);
         TextView mailContent = convertView.findViewById(R.id.mailContent);
         TextView mailNames = convertView.findViewById(R.id.mailNames);
         ImageView imageView = convertView.findViewById(R.id.imageView);
 
-
         MailList mail = mailArrayList.get(position);
         mailName.setText(mail.getName());
+        mailSubject.setText(mail.getSubject());
         mailContent.setText(mail.getMail());
         mailNames.setText(mail.getMailNames());
         imageView.setImageResource(mail.getImage());

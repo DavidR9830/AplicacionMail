@@ -30,17 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
         gmailListView = findViewById(R.id.gmailListView);
 
-        mailList.add(new MailList("Valentina","Ya esta finalizado el informe solicitado","V",R.menu.circle));
-        mailList.add(new MailList("Yenifer","Escribo para solicitar certificado de estudio","Y",R.menu.circle2));
-        mailList.add(new MailList("Nubank"," Su tarjeta de credito ha sido aprobada y le será entregada " +
+        mailList.add(new MailList("Valentina","Informe","Ya esta finalizado el informe solicitado","V",R.menu.circle));
+        mailList.add(new MailList("Yenifer","Cerificado","Escribo para solicitar certificado de estudio","Y",R.menu.circle2));
+        mailList.add(new MailList("Nubank","Tarjeta aprobada"," Su tarjeta de credito ha sido aprobada y le será entregada " +
                 "en una de nuestas sedes","N",R.menu.circle3));
-        mailList.add(new MailList("Google","Se ha detectado un nuevo inicio de sesión cerca a Medellín","G",R.menu.circle4));
-        mailList.add(new MailList("Didi","Recuerda calificar tu experiencia viajando con nostros," +
+        mailList.add(new MailList("Google","¿Fuiste tu?","Se ha detectado un nuevo inicio de sesión cerca a Medellín","G",R.menu.circle4));
+        mailList.add(new MailList("Didi","Calificación","Recuerda calificar tu experiencia viajando con nostros," +
                 " hazlo desde la app, al finalziar el viaje","D",R.menu.circle5));
-        mailList.add(new MailList("Mercado libre","Su pedido se ha envíado a la dirrección correspondiente" +
+        mailList.add(new MailList("Mercado libre","Pedido #86","Su pedido se ha envíado a la dirrección correspondiente" +
                 "recuerda que puedes rastreatlo desde nuestra app","M",R.menu.circle));
-        mailList.add(new MailList("Sura eps","Recuerda tu cita con médico general el 12/05/2024 a las 15:00","S",R.menu.circle2));
-        mailList.add(new MailList("Wom","Recuerda que con nuestro plan pospago tienes más megas para disfrutar,}" +
+        mailList.add(new MailList("Sura eps","Cita programada","Recuerda tu cita con médico general el 12/05/2024 a las 15:00","S",R.menu.circle2));
+        mailList.add(new MailList("Wom","Aprovecha la promo","Recuerda que con nuestro plan pospago tienes más megas para disfrutar," +
                 "ingresa y unete","W",R.menu.circle3));
 
 
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             intent.putExtra("mailName", selectedMail.getName());
+            intent.putExtra("mailSubject", selectedMail.getSubject());
             intent.putExtra("mailContent", selectedMail.getMail());
             intent.putExtra("mailNames", selectedMail.getMailNames());
             intent.putExtra("mailImage", selectedMail.getImage());

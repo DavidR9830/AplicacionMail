@@ -20,17 +20,20 @@ public class MailDetails extends Activity {
 
         Intent intent1 = getIntent();
         String mailName = intent1.getStringExtra("mailName");
+        String mailSubject = intent1.getStringExtra("mailSubject");
         String mailContent = intent1.getStringExtra("mailContent");
         String mailNames = intent1.getStringExtra("mailNames");
         int mailImage = intent1.getIntExtra("mailImage", 0);
 
         // Encontrar los elementos de la interfaz de usuario y establecer los datos
         TextView mailNameTextView = findViewById(R.id.mailName);
+        TextView mailSubjectTextView = findViewById(R.id.mailSubject);
         TextView mailContentTextView = findViewById(R.id.mailContent);
         TextView mailNamesTextView = findViewById(R.id.mailNames);
         ImageView imageView = findViewById(R.id.imageView);
 
         mailNameTextView.setText(mailName);
+        mailSubjectTextView.setText(mailSubject);
         mailContentTextView.setText(mailContent);
         mailNamesTextView.setText(mailNames);
         imageView.setImageResource(mailImage);

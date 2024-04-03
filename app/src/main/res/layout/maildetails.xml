@@ -42,17 +42,19 @@
         android:layout_marginTop="85dp"
         android:textSize="20dp"
         android:layout_marginLeft="110dp"
-        android:textColor="@color/black"
-        android:text="Google"/>
+        android:textColor="@color/black"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/mailSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         android:layout_marginTop="110dp"
-        android:textSize="10dp"
         android:layout_marginLeft="110dp"
-        android:textColor="#95a5a6"
-        android:text="Google@gmail.com"/>
+         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
 
     <TextView
         android:id="@+id/mailContent"

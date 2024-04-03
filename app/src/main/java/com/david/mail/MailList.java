@@ -3,7 +3,6 @@ package com.david.mail;
 
 public class MailList {
     private String name;
-    private String from;
     private String subject;
     private String mail;
     private String mailNames;
@@ -12,8 +11,9 @@ public class MailList {
 
     private  boolean read;
 
-    public MailList(String name,  String mail, String mailNames, int image) {
+    public MailList(String name, String subject, String mail, String mailNames, int image) {
         this.name = name;
+        this.subject = subject;
         this.mail = mail;
         this.mailNames = mailNames;
         this.image = image;
@@ -27,6 +27,14 @@ public class MailList {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
 
